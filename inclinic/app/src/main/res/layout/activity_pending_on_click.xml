@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittxt_width"
+                android:src="@drawable/doctor"
+                android:scaleType="centerCrop"
+                android:transitionName="img_transition"
+                android:id="@+id/onpendingdoctor_image"/>
+
+            <RelativeLayout
+                android:id="@+id/relcorn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/onboardingimg_size"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/relative_corners">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/onpendingdoctor_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blackTextColor"
+                            android:textSize="@dimen/fragments_title_size"
+                            android:text="Dr. Ahmed Gamaal El-Deen"
+                            android:shadowDy="6"
+                            android:shadowDx="6"
+                            android:shadowRadius="3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/margin8dp"
+                            android:layout_marginHorizontal="@dimen/margin16dp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/segoebold"/>
+                        <TextView
+                            android:id="@+id/onpendingdoctor_specialization"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/blackTextColor"
+                            android:textSize="@dimen/margin16dp"
+                            android:text="( Dentist )"
+                            android:layout_below="@id/onpendingdoctor_name"
+                            android:shadowDy="6"
+                            android:shadowDx="6"
+                            android:shadowRadius="3"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginHorizontal="@dimen/margin8dp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/segoe"/>
+
+                        <TextView
+                            android:id="@+id/onpendingdoctor_faculty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin16dp"
+                            android:layout_marginStart="@dimen/margin16dp"
+                            android:layout_marginTop="@dimen/margin8dp"
+                            android:layout_below="@id/onpendingdoctor_specialization"
+                            android:fontFamily="@font/segousemibold"
+                            android:text="Faculty of Medicine, Ain Shams University"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginEnd="@dimen/margin8dp"
+                            android:scrollbars="horizontal"
+                            android:drawableStart="@drawable/ic_baseline_school_24"
+                            android:drawablePadding="@dimen/margin4dp"
+                            android:textColor="#5F5F5F"
+                            />
+                        <TextView
+                            android:id="@+id/onpendingdoctor_location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin16dp"
+                            android:fontFamily="@font/segousemibold"
+                            android:layout_marginStart="@dimen/margin16dp"
+                            android:layout_below="@id/onpendingdoctor_faculty"
+                            android:text="Shubra Masr"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginEnd="@dimen/margin8dp"
+                            android:drawableStart="@drawable/location_24"
+                            android:drawablePadding="@dimen/margin4dp"
+                            android:textColor="#5F5F5F"
+                            />
+                        <TextView
+                            android:id="@+id/onpendingdoctor_gradeyears"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin16dp"
+                            android:layout_marginStart="@dimen/margin16dp"
+                            android:layout_below="@id/onpendingdoctor_location"
+                            android:text="GraduationYear: 1990"
+                            android:fontFamily="@font/segousemibold"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginEnd="@dimen/margin8dp"
+                            android:drawableStart="@drawable/ic_baseline_school_24"
+                            android:drawablePadding="@dimen/margin4dp"
+                            android:textColor="#5F5F5F"
+                            />
+                        <TextView
+                            android:id="@+id/onpendingdoctor_age"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin16dp"
+                            android:layout_marginStart="@dimen/margin16dp"
+                            android:layout_below="@id/onpendingdoctor_gradeyears"
+                            android:text="Age: 48"
+                            android:fontFamily="@font/segousemibold"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginEnd="@dimen/margin8dp"
+                            android:drawableStart="@drawable/person_24"
+                            android:drawablePadding="@dimen/margin4dp"
+                            android:textColor="#5F5F5F"
+                            />
+
+                        <TextView
+                            android:id="@+id/onpendingdoctor_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/margin16dp"
+                            android:layout_marginStart="@dimen/margin16dp"
+                            android:layout_below="@id/onpendingdoctor_age"
+                            android:text="+2 0120 036 2281"
+                            android:fontFamily="@font/segousemibold"
+                            android:gravity="center"
+                            android:maxLines="1"
+                            android:ellipsize="end"
+                            android:layout_marginEnd="@dimen/margin8dp"
+                            android:drawableStart="@drawable/call_24"
+                            android:drawablePadding="@dimen/margin4dp"
+                            android:textColor="#5F5F5F"
+                            />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/margin2dp"
+                            android:background="#5F5F5F"
+                            android:layout_marginTop="@dimen/margin4dp"
+                            android:layout_below="@id/onpendingdoctor_phone"/>
+
+
+                    </RelativeLayout>
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:background="@color/whiteTextColor"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clinic Location"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin12dp"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoebold"
+                android:textColor="@color/blackTextColor"
+                android:drawableStart="@drawable/ic_baseline_house_24"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin8dp"/>
+
+            <TextView
+                android:id="@+id/onpendingdoctor_cliniclocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin24dp"
+                android:layout_marginEnd="@dimen/margin16dp"
+                android:maxLines="3"
+                android:fontFamily="@font/segoe"
+                android:ellipsize="end"
+                android:textColor="#5F5F5F"
+                android:layout_marginTop="@dimen/margin4dp"
+                android:text="19st Shekolany Street Abdel Hafez Hamouda next to Ketchenur Hospital, Shubra Masr."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1dp"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin52dp"
+                android:layout_marginEnd="@dimen/margin52dp"
+                android:background="#5F5F5F"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Me"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin12dp"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoebold"
+                android:textColor="@color/blackTextColor"
+                android:drawableStart="@drawable/info_24"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin8dp"/>
+
+            <TextView
+                android:id="@+id/onpendingdoctor_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin24dp"
+                android:layout_marginEnd="@dimen/margin16dp"
+                android:maxLines="3"
+                android:fontFamily="@font/segoe"
+                android:ellipsize="end"
+                android:textColor="#5F5F5F"
+                android:layout_marginTop="@dimen/margin4dp"
+                android:text="||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1dp"
+                android:layout_marginTop="@dimen/margin32dp"
+                android:layout_marginStart="@dimen/margin64dp"
+                android:layout_marginEnd="@dimen/margin64dp"
+                android:background="#5F5F5F"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:layout_marginStart="@dimen/margin32dp"
+                android:layout_marginEnd="@dimen/margin32dp">
+
+                <Button
+                    android:id="@+id/onpendingdoctor_reject"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin52dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/margin12dp"
+                    android:background="@drawable/edittext_boorder"
+                    android:backgroundTint="#F11C1C"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:text="Reject"/>
+
+                <Button
+                    android:id="@+id/onpendingdoctor_accept"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/margin52dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="@dimen/margin12dp"
+                    android:background="@drawable/edittext_boorder"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:text="Accept"/>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

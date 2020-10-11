@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+app:layout_constraintBottom_toTopOf="parent"
+android:orientation="vertical"
+    >
+
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@drawable/card_ad_profit_background"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/ic_d_case_analysis" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="@string/case_analysis"
+            android:textColor="#FFF"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+-->
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/A_CaseAnalysis_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_boorder"
+        app:tabGravity="fill"
+        app:tabIndicatorColor="@color/AD_card_PrimaryDark"
+        app:tabMode="fixed"
+        app:tabTextColor="#FFF">
+
+        <com.google.android.material.tabs.TabItem
+
+            android:id="@+id/A_CaseAnalysis_Add_Tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_add"
+            android:text="@string/add" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/A_CaseAnalysis_Update_Tab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_edit"
+            android:text="@string/update" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+
+    android:id="@+id/A_CaseAnalysis_ViewPager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</androidx.viewpager.widget.ViewPager>
+
+
+</LinearLayout>

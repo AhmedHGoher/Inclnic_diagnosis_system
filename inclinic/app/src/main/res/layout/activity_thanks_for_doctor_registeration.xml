@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".ui_activities_auth.doctor_signup.Thanks_for_doctor_registeration">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/Logo_Thanks"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@mipmap/logo_white"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/image_Thanks"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@drawable/pic_logo"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        >
+        <TextView
+            android:id="@+id/txt_Thanks"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold|italic"
+            android:textSize="18dp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Dear Doctor.. \nThanks For Registeration in our program \nWe will review the data which you enter to the application \n please wait until one of our customer services contact your phone ..\nWith wishes for success\nTeam Work INCLINIC App"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

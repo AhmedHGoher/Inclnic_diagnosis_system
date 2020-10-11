@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@color/colorAccent"
+tools:context=".ui.Datasetup.add_information">
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="840dp"
+        android:layout_margin="24dp">
+
+        <ImageView
+            android:id="@+id/logoinLOgin"
+            android:layout_width="254dp"
+            android:layout_height="246dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ainogo3" />
+
+
+        <EditText
+            android:id="@+id/TxtDisease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Disease:"
+            android:layout_below="@id/logoinLOgin"
+            android:textColorHint="@color/login_form_details"
+            android:background="@drawable/et_bg"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginTop="5dp"/>
+
+
+        <EditText
+            android:id="@+id/TxtProfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Profit:"
+            android:textColorHint="@color/login_form_details"
+            android:padding="16dp"
+            android:background="@drawable/et_bg"
+            android:textColor="@color/white"
+            android:layout_below="@id/TxtDisease"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:id="@+id/Txtvisitors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="visitors:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/login_form_details"
+            android:padding="16dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/TxtProfit"
+            android:layout_marginTop="30dp" />
+
+
+        <EditText
+            android:id="@+id/TxtUsers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Users:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/login_form_details"
+            android:padding="16dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/Txtvisitors"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:id="@+id/TxtPatients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Patients:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/login_form_details"
+            android:padding="16dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/TxtUsers"
+            android:layout_marginTop="30dp" />
+
+
+        <EditText
+            android:id="@+id/TxtDiagnosis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Diagnosis:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/login_form_details"
+            android:padding="16dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/TxtPatients"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:id="@+id/TxtMedicalAnalysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="MedicalAnalysis:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/login_form_details"
+            android:padding="16dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/TxtDiagnosis"
+            android:layout_marginTop="30dp" />
+
+        <EditText
+            android:id="@+id/TxtMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Month:"
+            android:textColor="@color/white"
+            android:textColorHint="@color/login_form_details"
+            android:padding="16dp"
+            android:background="@drawable/et_bg"
+            android:layout_below="@id/TxtMedicalAnalysis"
+            android:layout_marginTop="30dp" />
+
+
+        <Button
+            android:id="@+id/BtnConfirmAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TxtMonth"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_bg"
+            android:text="Add"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="false"
+            android:textColor="@color/login_form_details" />
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

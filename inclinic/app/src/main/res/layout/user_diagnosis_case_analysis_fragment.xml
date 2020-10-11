@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    android:background="@color/colorAccent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp">
+
+    <EditText
+        android:id="@+id/Search"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/btn_bg_white"
+        android:textColorHint="@color/cardview_shadow_end_color"
+        android:textColor="@color/xxx"/>
+
+    <ImageView
+        android:id="@+id/SearchIcon"
+        android:layout_width="88dp"
+        android:layout_height="37dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/search_icon" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Admin_Case_Analysis_Recyle_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Search"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <Button
+        android:id="@+id/newDia"
+        android:layout_width="170dp"
+        android:layout_height="68dp"
+        android:background="@drawable/btn_bg"
+        android:text="New Diagnosis"
+        android:textAllCaps="false"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/login_form_details"
+        android:layout_below="@+id/Admin_Case_Analysis_Recyle_View"/>
+
+    <Button
+        android:id="@+id/AddCase"
+        android:layout_width="200dp"
+        android:layout_height="68dp"
+        android:background="@drawable/btn_bg"
+        android:text="Add Case Analysis"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/login_form_details"
+        android:layout_below="@+id/Admin_Case_Analysis_Recyle_View" />
+
+    </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

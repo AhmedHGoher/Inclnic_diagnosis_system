@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/UserMedicalAnalysisFragmentContaner"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/AD_card_GrayLight"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="405dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:background="@color/colorAccent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="45dp"
+                            android:src="@drawable/medical_analysis_photo1" />
+
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="400dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="270dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/start_analyzing"
+                                android:textSize="24sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/txt_NEW_No_Diagnosis"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Choose a specific Medical Analysis"
+                                android:textStyle="bold"
+                                android:textSize="24sp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/colorAccent"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+
+
+                    <Spinner
+                        android:id="@+id/NameTest"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent" />
+
+
+                    <EditText
+                        android:id="@+id/Tc1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/NameTest"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/colorAccent"
+                        android:padding="16dp"
+                        android:textColor="@color/login_form_details"
+                        android:textColorHint="@color/login_form_details"
+                        android:inputType="numberPassword" />
+
+                    <EditText
+                        android:id="@+id/Tc2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tc1"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:padding="16dp"
+                        android:textColor="@color/login_form_details"
+                        android:textColorHint="@color/login_form_details"
+                        android:inputType="numberPassword"/>
+
+                    <EditText
+                        android:id="@+id/Tc3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tc2"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:padding="16dp"
+                        android:textColor="@color/login_form_details"
+                        android:textColorHint="@color/login_form_details"
+                        android:inputType="numberPassword" />
+
+                    <EditText
+                        android:id="@+id/Tc4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tc3"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:padding="16dp"
+                        android:textColor="@color/login_form_details"
+                        android:textColorHint="@color/login_form_details"
+                        android:inputType="numberPassword" />
+
+
+                    <EditText
+                        android:id="@+id/Tc5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tc4"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:padding="16dp"
+                        android:textColor="@color/login_form_details"
+                        android:textColorHint="@color/login_form_details"
+                        android:inputType="numberPassword" />
+
+
+                    <EditText
+                        android:id="@+id/Tc6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Tc5"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:padding="16dp"
+                        android:textColor="@color/login_form_details"
+                        android:textColorHint="@color/login_form_details"
+                        android:inputType="numberPassword" />
+
+
+
+
+                    <Button
+                        android:id="@+id/Check"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Tc6"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorAccent"
+                        android:text="Check"
+                        android:textAllCaps="false"
+                        android:textColor="@color/login_form_details_medium"
+                        android:layout_marginBottom="30dp" />
+
+                    <TextView
+                        android:id="@+id/ResultView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Check"
+                        android:padding="16dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/login_form_details"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:autoSizeTextType="uniform"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:id="@+id/ResultView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ResultView1"
+                        android:padding="16dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/login_form_details"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:autoSizeTextType="uniform"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:id="@+id/ResultView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ResultView2"
+                        android:padding="16dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/login_form_details"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:autoSizeTextType="uniform"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:id="@+id/ResultView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ResultView3"
+                        android:padding="16dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/login_form_details"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:autoSizeTextType="uniform"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:id="@+id/ResultView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ResultView4"
+                        android:padding="16dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/login_form_details"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:autoSizeTextType="uniform"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="20dp" />
+                    <TextView
+                        android:id="@+id/ResultView6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/ResultView5"
+                        android:padding="16dp"
+                        android:background="@color/colorAccent"
+                        android:textColor="@color/login_form_details"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:autoSizeTextType="uniform"
+                        android:textAlignment="center"
+                        android:textSize="24sp"
+                        android:gravity="center_horizontal"
+                        android:layout_marginBottom="30dp"/>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+</FrameLayout>

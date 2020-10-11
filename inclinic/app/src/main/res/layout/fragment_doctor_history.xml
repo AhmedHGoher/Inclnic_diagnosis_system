@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    tools:context=".Doctor.ui.CurrentAppointment.DoctorAppointments">
+
+    <Spinner
+        android:id="@+id/doctorhistory_daysspinner"
+        android:layout_width="@dimen/fragment_btn_size"
+        android:layout_height="@dimen/margin40dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:layout_gravity="end"
+        android:gravity="center"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_background"
+        android:drawSelectorOnTop="true"
+        android:layout_marginEnd="@dimen/margin8dp"
+        />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin8dp"
+        android:id="@+id/history_swiperefresh_doctor_home_ui">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/history_recyclerview_doctor_home_ui"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

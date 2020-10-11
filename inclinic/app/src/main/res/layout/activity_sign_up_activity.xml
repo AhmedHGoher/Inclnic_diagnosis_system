@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/raious_logo"
+        android:layout_weight="1.2"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/logo_white"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            >
+
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        >
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8.7"
+        android:padding="8dp"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin4dp"
+                android:gravity="center"
+                android:text="Full Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/margin16dp"
+               android:fontFamily="@font/segousemibold" />
+
+            <EditText
+                android:id="@+id/name_ui_EditText"
+                android:layout_width="@dimen/rowfav_height"
+                android:layout_height="@dimen/margin48dp"
+                android:hint="Enter Username"
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textSize="@dimen/margin16dp"
+                android:ellipsize="end"
+                android:paddingHorizontal="@dimen/margin12dp"
+                android:background="@drawable/et_style"
+                android:fontFamily="@font/segoe"
+                android:layout_marginHorizontal="@dimen/margin16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin4dp"
+                android:gravity="center"
+                android:text="Age"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segousemibold" />
+
+            <EditText
+                android:id="@+id/age_ui_EditText"
+                android:layout_width="@dimen/rowfav_height"
+                android:layout_height="@dimen/margin48dp"
+                android:hint="Enter Age"
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:ellipsize="end"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoe"
+                android:paddingHorizontal="@dimen/margin12dp"
+                android:background="@drawable/et_style"
+                android:layout_marginHorizontal="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Email"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:layout_marginBottom="@dimen/margin4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segousemibold"/>
+            <EditText
+                android:id="@+id/ui_EmailAddress_EditText_LoginActivity"
+                android:layout_width="@dimen/rowfav_height"
+                android:layout_height="@dimen/margin48dp"
+                android:hint="Enter Email"
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoe"
+                android:paddingHorizontal="@dimen/margin12dp"
+                android:background="@drawable/et_style"
+                android:layout_marginHorizontal="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Password"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:layout_marginBottom="@dimen/margin4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segousemibold"/>
+            <EditText
+                android:id="@+id/ui_Password_EditText_LoginActivity"
+                android:layout_width="@dimen/rowfav_height"
+                android:layout_height="@dimen/margin48dp"
+                android:hint="Enter Password"
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoe"
+                android:paddingHorizontal="@dimen/margin12dp"
+                android:background="@drawable/et_style"
+                android:layout_marginHorizontal="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Confirm Password"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:layout_marginBottom="@dimen/margin4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segousemibold"/>
+
+            <EditText
+                android:id="@+id/ui_Password_confirm_EditText_LoginActivity"
+                android:layout_width="@dimen/rowfav_height"
+                android:layout_height="@dimen/margin48dp"
+                android:hint="Repeat The Password"
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoe"
+                android:paddingHorizontal="@dimen/margin12dp"
+                android:background="@drawable/et_style"
+                android:layout_marginHorizontal="16dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Phonenumber"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:layout_marginBottom="@dimen/margin4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segousemibold"/>
+            <EditText
+                android:id="@+id/phonenum_ui_EditText"
+                android:layout_width="@dimen/rowfav_height"
+                android:layout_height="@dimen/margin48dp"
+                android:hint="Enter Phonenumber"
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:maxLength="14"
+                android:ellipsize="end"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoe"
+                android:paddingHorizontal="@dimen/margin12dp"
+                android:background="@drawable/et_style"
+                android:layout_marginHorizontal="16dp"
+                />
+
+
+            <Button
+                android:id="@+id/ui_signup_Button_ui"
+                android:layout_width="@dimen/fragment_btn_size"
+                android:layout_height="@dimen/margin48dp"
+                android:text="Sign Up"
+                android:textSize="18dp"
+                android:textColor="#FFF"
+                android:background="@drawable/edittext_boorder"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/margin24dp"
+                android:layout_marginBottom="@dimen/margin12dp"
+                android:fontFamily="@font/segousemibold"
+                android:layout_gravity="center"
+                android:elevation="@dimen/margin16dp"
+                />
+            <ProgressBar
+                android:id="@+id/main_progress"
+                android:layout_width="@dimen/margin32dp"
+                android:layout_height="@dimen/margin32dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/spinner"
+                android:indeterminateTint="@color/colorPrimaryDark"
+                />
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
+

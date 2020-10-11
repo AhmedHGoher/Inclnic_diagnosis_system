@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">Inclinic</string>
+    <string name="EmailAddress_EditText">Email :</string>
+    <string name="Password_EditText">Password : </string>
+    <string name="SignUp_Btn">Password :</string>
+    <string name="Login_Btn">Login</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Appointments</string>
+    <string name="menu_slideshow">Profile</string>
+
+    <!--
+
+    -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_history_of__meals">History_of_Meals</string>
+    <string name="tab_text_1">All Doctors</string>
+    <string name="tab_text_2">Pending Doctors</string>
+    <string name="tab_text_3">Profile</string>
+    <string name="title_activity_doctor_signup">Doctor_signup</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Appointment</string>
+    <string name="title_notifications">Profile</string>
+    <string name="title_activity_home">MainActivity</string>
+
+    <string-array name="locations">
+        <item>Zamalek</item>
+        <item>Maadi</item>
+        <item>Heliopoles</item>
+        <item>October</item>
+        <item>Mohandiseen</item>
+        <item>Nasr City</item>
+        <item>Shubra Masr</item>
+    </string-array>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="title_activity_doctor_home">MainActivity</string>
+
+    <string name="title_activity_admin__navigation">Admin_Navigation</string>
+    <!-- ======= Navigation Header  ===== -->
+    <string name="nav_admin_header_desc">Admin Photo</string>
+    <string name="nav_admin_header_title">Admin Name</string>
+    <string name="nav_admin_header_title_A">Admin</string>
+    <string name="nav_admin_header_subtitle_A">4A_Admin@4a.com</string>
+    <string name="nav_admin_header_subtitle">4A_Admin@4a.com</string>
+    <!-- ======= Menu Selections   ===== -->
+    <string name="Admin_Dashboard">Dashboard</string>
+    <string name="Admin_Diagnosis">Diagnosis</string>
+    <string name="Admin_MedicalAnalysis">MedicalAnalysis</string>
+    <string name="Profile">Profile</string>
+    <string name="Logout">Logout</string>
+    <!-- =========================== -->
+    <!-- ======= Navigation Header  ===== -->
+    <string name="title_activity_user__navigation">User Navigation</string>
+    <string name="nav_user_header_desc">User Photo</string>
+    <string name="nav_user_header_title">User Name</string>
+    <string name="nav_user_header_subtitle">User@4a.com</string>
+    <!-- ======= User   ===== -->
+    <string name="User_Menu">User Side</string>
+    <string name="case_analysis">Case Analysis</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="have_an_account">Have An Account  </string>
+    <string name="login">Login</string>
+    <string name="signup_now">SignUp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="add">Add</string>
+    <string name="start_diagnosing">Start Diagnosing</string>
+    <string name="choose_a_specific_body_part">Choose a specific body part</string>
+    <string name="start_analyzing">Start Analyzing</string>
+    <string name="_0_12">0-12</string>
+    <string name="_13_18">13-18</string>
+    <string name="_19_32">19-32</string>
+    <string name="_33_50">33-50</string>
+    <string name="_50">50+</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="head_and_neck">Head and Neck</string>
+    <string name="hair_loss">Hair Loss</string>
+    <string name="headache">Headache</string>
+    <string name="chest_and_back">Chest and Back</string>
+    <string name="chest_pain">Chest Pain</string>
+    <string name="pain_on_lower_back">Pain on lower back</string>
+
+    <!-- ============ -->
+    <string name="Admin_Medical_Analysis">Medical Analysis</string>
+
+    <string-array name="NamesTest">
+        <item>Choose an analysis type</item>
+        <item>Complete Blood Count (CBC)</item>
+        <item>Erythrocyte Sedimentation Rate (ESR)</item>
+        <item>Fasting Blood Sugar(FBS)</item>
+        <item>Uric Acid</item>
+        <item>Creatinine</item>
+        <item>Urea</item>
+        <item>serum glutamic-oxaloacetic transaminase (SGOT/AST)</item>
+        <item>Serum glutamic pyruvic transaminase (SGPT/ALT)</item>
+        <item>Cholesterol</item>
+        <item>Triglycerides</item>
+        <item>Urine</item>
+        <item>pressure</item>
+    </string-array>
+
+
+</resources>

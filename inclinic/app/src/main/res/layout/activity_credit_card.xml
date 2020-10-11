@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:background="@drawable/ic_baseline_arrow_back_ios_24"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:layout_marginStart="@dimen/margin12dp"
+            android:id="@+id/creditactivity_backimgbtn"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin52dp"
+            android:layout_marginTop="@dimen/margin24dp"
+            android:layout_below="@id/creditactivity_backimgbtn"
+            android:id="@+id/payrelative">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin52dp"
+                android:background="@drawable/btncorners"
+                android:layout_margin="@dimen/margin4dp"
+                android:layout_centerHorizontal="true"
+                android:text="Pay by cash"
+                android:textSize="@dimen/margin16dp"
+                android:textAllCaps="false"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:fontFamily="@font/segoe"
+                android:id="@+id/creditactivity_paycash"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin16dp"
+            android:text="------------ OR ------------\nFill Credit Data"
+            android:layout_marginBottom="@dimen/margin8dp"
+            android:gravity="center"
+            android:textColor="@color/whiteTextColor"
+            android:fontFamily="@font/segousemibold"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:layout_below="@id/payrelative"
+            android:layout_centerHorizontal="true"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/relative_corners"
+        android:layout_below="@id/relative"
+        android:orientation="vertical"
+        >
+
+        <com.braintreepayments.cardform.view.CardForm
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/margin16dp"
+            android:id="@+id/creditcard"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/creditrelative"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relativefragment_height"
+        android:background="@drawable/relative_corners"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:elevation="@dimen/margin12dp"
+        android:layout_alignParentBottom="true">
+        <TextView
+            android:id="@+id/creditactivity_booktxt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Pay by credit"
+            android:textSize="@dimen/margin16dp"
+            android:fontFamily="@font/segoe"
+            android:textColor="#000"
+            />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/whiteTextColor"
+            android:indeterminateBehavior="repeat"
+            android:backgroundTintMode="multiply"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:id="@+id/creditactivity_progressbar"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

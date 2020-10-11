@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="inclinic.com">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app_icon2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.home.ReviewsActivity"></activity>
+        <activity android:name=".ui.Search.SearchActivity" />
+        <activity android:name=".Admin.Blocked_activity" />
+        <activity android:name=".Doctor_Home" />
+        <activity android:name=".ui.Book.CreditCardActivity" />
+        <activity android:name=".ui.Book.BookActivity" />
+        <activity android:name=".ui.home.OnDoctorClickActivity" />
+        <activity android:name=".Admin.ui.PendingDoc.PendingOnClickActivity" />
+        <activity android:name=".Admin.AllDoc.AllDocOnClickActivity" />
+       <!-- <activity
+            android:name=".Admin.AdminActivity"
+            android:label="@string/title_activity_admin"
+            android:theme="@style/AppTheme.NoActionBar" />-->
+        <activity android:name=".ui_activities_auth.doctor_signup.Doctor_Appointments" />
+        <activity android:name=".ui.home.DoctorActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".ui_activities_auth.doctor_signup.Thanks_for_doctor_registeration" />
+        <activity android:name=".ui_activities_auth.splash.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".ui_activities_auth.splash.splash_loin_sign"/>
+        <activity android:name=".ui_activities_auth.doctor_signup.Doctor_rejected_thanks"/>
+
+
+        <activity android:name=".OCR.OCR" />
+        <meta-data
+            android:name="com.google.firebase.ml.vision.DEPENDENCIES"
+            android:value="ocr" />
+
+
+        <activity
+            android:name=".Admin_Navigation"
+            android:label="@string/title_activity_admin__navigation"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".uiD.admin_medical_analysis.Admin_Medical_Analysis_Update_Action"
+            android:parentActivityName=".Admin_Navigation"/>
+        <activity
+            android:name=".uiD.admin_diagnosis.Admin_Diagnosis_Update_Action"
+            android:parentActivityName=".Admin_Navigation" />
+        <activity
+            android:name=".uiD.admin_case_analysis.Admin_CaseAnalysis_Update_Action"
+            android:parentActivityName=".Admin_Navigation" />
+        <activity
+            android:name=".uiD.admin_dashboard.Analysis"
+            android:parentActivityName=".Admin_Navigation" />
+        <activity
+            android:name=".uiD.admin_dashboard.No_Medical_Analysis"
+            android:parentActivityName=".Admin_Navigation" />
+        <activity
+            android:name=".uiD.admin_dashboard.No_Diagnosis"
+            android:parentActivityName=".Admin_Navigation" />
+        <activity
+            android:name=".uiD.admin_dashboard.New_Users"
+            android:parentActivityName=".Admin_Navigation" />
+        <activity
+            android:name=".uiD.admin_dashboard.New_Visitors"
+            android:parentActivityName=".Admin_Navigation" />
+        <activity
+            android:name=".uiD.admin_dashboard.Profit"
+            android:parentActivityName=".Admin_Navigation" />
+
+        <activity android:name=".Ads.Ads" android:theme="@style/AppTheme.NoActionBar1" />
+
+
+
+        <activity android:name=".ui_activities_auth.login.SginIn" />
+        <activity android:name=".ui_activities_auth.user_signup.SignUP_activity" />
+        <activity android:name=".ui_activities_auth.login.Forget_password_activity" />
+        <activity android:name=".ui_activities_auth.doctor_signup.Doctor_signup" />
+        <activity android:name=".ui_activities_auth.login.Logout_activity" />
+        <activity android:name=".ui_activities_auth.user_signup.User_edit_profile" />
+        <activity android:name=".Admin.AllDoc.Doctor_edit_information" />
+        <activity android:name=".Admin.AllDoc.Doctor_thanks_for_edit_profile_data"></activity>
+    </application>
+
+</manifest>

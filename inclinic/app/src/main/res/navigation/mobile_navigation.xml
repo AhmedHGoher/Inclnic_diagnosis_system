@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="inclinic.com.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_appointment"
+        android:name="inclinic.com.ui.Appointment.AppointmentFragment"
+        android:label="@string/title_dashboard"
+        tools:layout="@layout/fragment_appointment" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="inclinic.com.ui.Profile.ProfileFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/nav_User_Diagnosis"
+        android:name="inclinic.com.uiD.user_diagnosis.User_Diagnosis_Fragment"
+        android:label="@string/Admin_Diagnosis"
+        tools:layout="@layout/fragment_user_diagnosis" />
+
+    <fragment
+        android:id="@+id/nav_User_MedicalAnalysis"
+        android:name="inclinic.com.uiD.user_medical_analysis.User_Medical_Analysis_Fragment"
+        android:label="@string/Admin_MedicalAnalysis"
+        tools:layout="@layout/fragment_user_medical_analysis" />
+
+    <fragment
+        android:id="@+id/nav_User_CaseAnalysis"
+        android:name="inclinic.com.uiD.user_case_analysis.User_Case_Analysis_Fragment"
+        android:label="@string/case_analysis"
+        tools:layout="@layout/fragment_user_case_analysis" />
+
+    <fragment
+        android:id="@+id/OCR"
+        android:name="inclinic.com.OCR.OCR"
+        android:label="OCR"
+        tools:layout="@layout/ocr" />
+
+
+    <fragment
+        android:id="@+id/nav_aboutus"
+        android:name="inclinic.com.ui.Aboutus.AboutUsFragment"
+        android:label="About us"
+        tools:layout="@layout/fragment_about_us" />
+
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="inclinic.com.ui.Contactus.ContactUsFragment"
+        android:label="Contact us"
+        tools:layout="@layout/fragment_contact_us" />
+
+</navigation>

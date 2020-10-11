@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#FFFFFF"
+    tools:context=".ui_activities_auth.doctor_signup.Doctor_signup">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/raious_logo"
+        android:layout_weight="1.4"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@mipmap/logo_white"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.6"
+        android:padding="8dp"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/imgPersonToUploadUi"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/buttontouploadui"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edittext_boorder"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:text="Add Photo"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp">
+
+                </Button>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:text="Doctor full Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxLength="56"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginVertical="4dp"
+                android:layout_marginHorizontal="16dp"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="Email address"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/ui_EmailAddress_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:maxLength="56"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginVertical="4dp"
+                android:layout_marginHorizontal="16dp"
+                android:drawableRight="@drawable/ic_baseline_email_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Password"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/ui_Password_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:password="true"
+                android:background="@drawable/et_style"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_lock_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Confirm Password"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/ui_Password_confirm_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:password="true"
+                android:background="@drawable/et_style"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_lock_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Phonenumber"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+            <EditText
+                android:id="@+id/phonenum_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:maxLength="13"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_local_phone_24"
+                />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="AGE : "
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/age_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Your National ID"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                    android:id="@+id/id_number_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:maxLength="18"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Your college and the university name"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/facultyname_and_collageName_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textLongMessage"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Enter Graduation Year"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/graduation_year_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:maxLength="4"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Select Specialization (Click)"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/specialization_ui_spinner_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:entries="@array/t5asos"
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_arrow_downward_24"
+                >
+            </Spinner>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="The clinic area"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/clinic_area_ui_spinner_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Enter your clinic location "
+                android:entries="@array/location_pickup"
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="clinic location details"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/clinic_location_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="text"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="clinic location link"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/clinic_location_maps_link_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="text"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Appointment Price"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/price_per_hour_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:maxLength="6"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="About me"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/about_me_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textLongMessage"
+                android:padding="14dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="@dimen/margin16dp"
+                android:layout_marginHorizontal="14dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/ui_signup_Button_ui_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:background="@drawable/edittext_boorder"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:elevation="8dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+        <ProgressBar
+            android:id="@+id/main_progress_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+    </LinearLayout>
+
+</LinearLayout>

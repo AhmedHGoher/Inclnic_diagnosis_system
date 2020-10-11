@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".Admin.Blocked_activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:src="@mipmap/logo_white"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_baseline_sentiment_very_dissatisfied_24"
+            android:layout_gravity="center"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="16dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Blocked User"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="@dimen/margin32dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            >
+        </TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/margin24dp"
+            android:textColor="#ffffff"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Sorry we have blocked your account for security reasons. \n Thank you for visiting! \nWe hope to see you again soon. \n Inclinic team work"
+            >
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

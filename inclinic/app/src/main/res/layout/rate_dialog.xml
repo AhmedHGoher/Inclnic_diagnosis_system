@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:padding="8dp"
+    android:background="@mipmap/clip_art1"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="Rate The Appointment"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        />
+
+    <TextView
+        android:id="@+id/day_name_appointment_and_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:textColor="#ffffff"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        />
+
+    <RatingBar
+        android:id="@+id/ratingBar_appointment_user_rate_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:paddingTop="@dimen/margin16dp"
+        android:theme="@style/RatingBar"
+        >
+    </RatingBar>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:text="Write an Review about doctor :"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        />
+
+    <EditText
+        android:id="@+id/review_edittext_appointment_rate_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/et_style_white"
+        android:layout_margin="@dimen/margin8dp"
+        android:padding="@dimen/margin12dp"
+        android:hint="Write an Review about doctor"
+        ></EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:weightSum="2"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        >
+
+        <Button
+            android:id="@+id/rate_cancel"
+            android:layout_width="180dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:backgroundTint="#FFF"
+            android:textColor="#000"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/edittext_boorder"
+            />
+
+        <Button
+            android:id="@+id/rate_add"
+            android:layout_width="180dp"
+            android:layout_height="36dp"
+            android:layout_weight="1"
+            android:text="Add"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:backgroundTint="#FFF"
+            android:textColor="#000"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:background="@drawable/edittext_boorder"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

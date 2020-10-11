@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.1"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/edittxt_width"
+                android:src="@drawable/doctor"
+                android:scaleType="centerCrop"
+                android:transitionName="imgtransition"
+                android:id="@+id/alldoctorclick_image"/>
+
+            <ImageButton
+                android:id="@+id/alldoctorclick_backimgbtn"
+                android:layout_width="@dimen/margin24dp"
+                android:layout_height="@dimen/margin24dp"
+                android:src="@drawable/backarrow"
+                android:paddingLeft="@dimen/margin4dp"
+                android:layout_margin="@dimen/margin12dp"
+                android:background="@drawable/radiusimgbtn"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.9"
+        android:background="@color/whiteTextColor"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/alldoctorclick_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/fragments_title_size"
+                android:text="Dr. Amer Ashraf"
+                android:shadowDy="6"
+                android:shadowDx="6"
+                android:drawableStart="@drawable/verified_user_24"
+                android:drawablePadding="@dimen/margin8dp"
+                android:shadowRadius="3"
+                android:layout_centerHorizontal="true"
+                android:transitionName="nametransition"
+                android:layout_marginTop="@dimen/margin8dp"
+                android:layout_marginHorizontal="@dimen/margin16dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:fontFamily="@font/segoebold"/>
+            <RatingBar
+                android:id="@+id/alldoctorclick_ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="5"
+                android:stepSize="0.5"
+                android:rating="0"
+                android:layout_centerHorizontal="true"
+                android:transitionName="ratetransition"
+                android:clickable="false"
+                android:progressTint="#FFCA2B"
+                android:layout_marginStart="@dimen/margin48dp"
+                />
+
+            <TextView
+                android:id="@+id/alldoctorclick_specialization"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:fontFamily="@font/segousemibold"
+                android:text="Specialaize in General"
+                android:transitionName="pricetransition"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginEnd="@dimen/margin8dp"
+                android:scrollbars="horizontal"
+                android:drawableStart="@drawable/ic_baseline_business_center_24"
+                android:drawablePadding="@dimen/margin4dp"
+                android:textColor="#5F5F5F"/>
+
+            <TextView
+                android:id="@+id/alldoctorclick_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginTop="@dimen/margin2dp"
+                android:fontFamily="@font/segousemibold"
+                android:transitionName="pricetransition"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginEnd="@dimen/margin8dp"
+                android:scrollbars="horizontal"
+                android:drawableStart="@drawable/age_24"
+                android:drawablePadding="@dimen/margin4dp"
+                android:textColor="#5F5F5F"/>
+
+            <TextView
+                android:id="@+id/alldoctorclick_faculty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginTop="@dimen/margin2dp"
+                android:fontFamily="@font/segousemibold"
+                android:text=""
+                android:transitionName="pricetransition"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginEnd="@dimen/margin8dp"
+                android:scrollbars="horizontal"
+                android:drawableStart="@drawable/ic_baseline_school_24"
+                android:drawablePadding="@dimen/margin4dp"
+                android:textColor="#5F5F5F"/>
+
+            <TextView
+                android:id="@+id/alldoctorclick_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginTop="@dimen/margin2dp"
+                android:layout_below="@id/ondoctorclick_specialization"
+                android:fontFamily="@font/segousemibold"
+                android:text="Price: 120 L.E"
+                android:transitionName="pricetransition"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginEnd="@dimen/margin8dp"
+                android:scrollbars="horizontal"
+                android:drawableStart="@drawable/ic_baseline_local_offer_24"
+                android:drawablePadding="@dimen/margin4dp"
+                android:textColor="#5F5F5F"
+                />
+            <TextView
+                android:id="@+id/alldoctorclick_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segousemibold"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginTop="@dimen/margin2dp"
+                android:layout_below="@id/ondoctorclick_price"
+                android:text="Location in Shubra Masr"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginEnd="@dimen/margin8dp"
+                android:drawableStart="@drawable/location_24"
+                android:drawablePadding="@dimen/margin4dp"
+                android:textColor="#5F5F5F"
+                />
+            <TextView
+                android:id="@+id/alldoctorclick_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_below="@id/ondoctorclick_appointments"
+                android:layout_marginTop="@dimen/margin2dp"
+                android:text="Phone Number 01010101010"
+                android:fontFamily="@font/segousemibold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginEnd="@dimen/margin8dp"
+                android:drawableStart="@drawable/call_24"
+                android:drawablePadding="@dimen/margin4dp"
+                android:textColor="#5F5F5F"
+                />
+            <TextView
+                android:id="@+id/alldoctorclick_appointments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginTop="@dimen/margin2dp"
+                android:layout_below="@id/ondoctorclick_location"
+                android:fontFamily="@font/segousemibold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:transitionName="locationtransition"
+                android:ellipsize="end"
+                android:layout_marginEnd="@dimen/margin8dp"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:drawablePadding="@dimen/margin4dp"
+                android:textColor="#5F5F5F"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin2dp"
+                android:background="#5F5F5F"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_alignParentBottom="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile Info"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin12dp"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoebold"
+                android:textColor="@color/blackTextColor"
+                android:drawableStart="@drawable/account_circle_24"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginEnd="@dimen/margin24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/alldoctorclick_allappointments"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:textSize="@dimen/margin16dp"
+                    android:fontFamily="@font/segoe"
+                    android:layout_marginTop="@dimen/margin4dp"
+                    android:text="Appointments\n"
+                    android:textColor="#5F5F5F"/>
+                <TextView
+                    android:id="@+id/alldoctorclick_allstars"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:textSize="@dimen/margin16dp"
+                    android:fontFamily="@font/segoe"
+                    android:layout_marginTop="@dimen/margin4dp"
+                    android:text="Stars\n"
+                    android:textColor="#5F5F5F"/>
+                <TextView
+                    android:id="@+id/alldoctorclick_ratetxt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/margin16dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe"
+                    android:layout_marginTop="@dimen/margin4dp"
+                    android:text="Rate\n"
+                    android:textColor="#5F5F5F"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1dp"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin52dp"
+                android:layout_marginEnd="@dimen/margin52dp"
+                android:background="#5F5F5F"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clinic Location"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin12dp"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoebold"
+                android:textColor="@color/blackTextColor"
+                android:drawableStart="@drawable/ic_baseline_house_24"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin8dp"/>
+
+            <TextView
+                android:id="@+id/alldoctorclick_cliniclocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin24dp"
+                android:layout_marginEnd="@dimen/margin16dp"
+                android:maxLines="3"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoe"
+                android:ellipsize="end"
+                android:textColor="#5F5F5F"
+                android:layout_marginTop="@dimen/margin4dp"
+                android:text="6th Of October City 6th Of October City ."
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1dp"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin52dp"
+                android:layout_marginEnd="@dimen/margin52dp"
+                android:background="#5F5F5F"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Appointments"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin12dp"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoebold"
+                android:textColor="@color/blackTextColor"
+                android:drawableStart="@drawable/ic_baseline_date_range_24"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginEnd="@dimen/margin24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:textSize="@dimen/margin16dp"
+                    android:fontFamily="@font/segousemibold"
+                    android:layout_marginTop="@dimen/margin4dp"
+                    android:text="Day"
+                    android:textColor="#5F5F5F"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/margin16dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/segousemibold"
+                    android:layout_marginTop="@dimen/margin4dp"
+                    android:text="From"
+                    android:textColor="#5F5F5F"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/margin16dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/segousemibold"
+                    android:layout_marginTop="@dimen/margin4dp"
+                    android:text="To"
+                    android:textColor="#5F5F5F"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginEnd="@dimen/margin24dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/alldoctorclick_day"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:textSize="@dimen/margin16dp"
+                    android:fontFamily="@font/segoe"
+                    android:textColor="#5F5F5F"/>
+                <TextView
+                    android:id="@+id/alldoctorclick_from"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/margin16dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe"
+                    android:textColor="#5F5F5F"/>
+                <TextView
+                    android:id="@+id/alldoctorclick_to"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:maxLines="3"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/margin16dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/segoe"
+                    android:textColor="#5F5F5F"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1dp"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin52dp"
+                android:layout_marginEnd="@dimen/margin52dp"
+                android:background="#5F5F5F"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About Me"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin12dp"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoebold"
+                android:textColor="@color/blackTextColor"
+                android:drawableStart="@drawable/info_24"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin8dp"/>
+
+            <TextView
+                android:id="@+id/alldoctorclick_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin24dp"
+                android:layout_marginEnd="@dimen/margin16dp"
+                android:maxLines="3"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoe"
+                android:ellipsize="end"
+                android:textColor="#5F5F5F"
+                android:layout_marginTop="@dimen/margin4dp"
+                android:text="||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1dp"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin52dp"
+                android:layout_marginEnd="@dimen/margin52dp"
+                android:background="#5F5F5F"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reviews"
+                android:layout_marginTop="@dimen/margin16dp"
+                android:layout_marginStart="@dimen/margin12dp"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segoebold"
+                android:textColor="@color/blackTextColor"
+                android:drawableStart="@drawable/ic_baseline_rate_review_24"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin8dp"/>
+
+            <TextView
+                android:id="@+id/alldoctorclick_noreviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Reviews Found"
+                android:textColor="@color/blackTextColor"
+                android:textSize="@dimen/margin16dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/segousemibold"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/margin8dp"/>
+
+            <ListView
+                android:id="@+id/alldoctorclick_reviewslistview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin16dp"
+                android:layout_marginEnd="@dimen/margin8dp"
+                android:layout_marginTop="@dimen/margin4dp"
+                />
+
+            <TextView
+                android:id="@+id/alldoctorclick_allreviews"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/margin12dp"
+                android:fontFamily="@font/segoebold"
+                android:text="See All Reviews"
+                android:textColor="@color/blackTextColor"
+                android:layout_gravity="end"
+                android:drawableEnd="@drawable/ic_baseline_arrow_right_24"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin1dp"
+                android:layout_marginTop="@dimen/margin24dp"
+                android:layout_marginStart="@dimen/relative_height"
+                android:layout_marginEnd="@dimen/relative_height"
+                android:background="#5F5F5F"/>
+
+            <Button
+                android:id="@+id/alldoctorclick_removebtn"
+                android:layout_width="@dimen/edittxt_width"
+                android:layout_height="@dimen/margin52dp"
+                android:layout_marginTop="@dimen/margin12dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/segousemibold"
+                android:background="@drawable/cardviewgradient"
+                android:layout_marginBottom="@dimen/margin16dp"
+                android:text="Remove Doctor"
+                android:textAllCaps="false"
+                android:textColor="@color/blackTextColor"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

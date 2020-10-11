@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#FFFFFF">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/raious_logo"
+        android:layout_weight="1.6"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@mipmap/logo_white"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            >
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doctor Appoinments"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            >
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        >
+
+    </LinearLayout>
+
+<ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.2"
+        android:padding="8dp"
+        android:gravity="center"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hello Doctor, Thanks for registeration\nPlease Specify your clinic appointments"
+                android:textSize="@dimen/margin16dp"
+                android:gravity="center"
+                android:textColor="@color/blackTextColor"
+                >
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin24dp"
+                ></LinearLayout>
+
+
+                <Switch
+                    android:id="@+id/Saturday_switch_ui_appoiment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/margin4dp"
+                    android:textStyle="bold"
+                    android:padding="@dimen/margin8dp"
+                    android:layout_margin="@dimen/margin4dp"
+                    >
+                </Switch>
+
+            <Switch
+                android:id="@+id/sunday_switch_ui_appoiment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunday"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/margin4dp"
+                android:textStyle="bold"
+                android:padding="@dimen/margin8dp"
+                android:layout_margin="@dimen/margin4dp"
+                >
+            </Switch>
+
+
+            <Switch
+                android:id="@+id/Monday_switch_ui_appoiment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Monday"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textStyle="bold"
+                android:padding="@dimen/margin8dp"
+                android:layout_margin="@dimen/margin4dp"
+                >
+            </Switch>
+
+            <Switch
+                android:id="@+id/Tuesday_switch_ui_appoiment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tuesday"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textStyle="bold"
+                android:padding="@dimen/margin8dp"
+                android:layout_margin="@dimen/margin4dp"
+                >
+            </Switch>
+
+            <Switch
+                android:id="@+id/Wednesday_switch_ui_appoiment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wednesday"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textStyle="bold"
+                android:padding="@dimen/margin8dp"
+                android:layout_margin="@dimen/margin4dp"
+                >
+            </Switch>
+
+
+            <Switch
+                android:id="@+id/Thursday_switch_ui_appoiment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thursday"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textStyle="bold"
+                android:padding="@dimen/margin8dp"
+                android:layout_margin="@dimen/margin4dp"
+                >
+            </Switch>
+
+            <Switch
+                android:id="@+id/Friday_switch_ui_appoiment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friday"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:textStyle="bold"
+                android:padding="@dimen/margin8dp"
+                android:layout_margin="@dimen/margin4dp"
+                >
+            </Switch>
+
+
+        </LinearLayout>
+
+</ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        >
+        <Button
+            android:id="@+id/ui_submit_appoiments_Button_ui_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:background="@drawable/edittext_boorder"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:textStyle="bold"
+            android:elevation="8dp"
+            android:layout_gravity="center"
+            />
+        <ProgressBar
+            android:id="@+id/main_progress_appointments_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:visibility="gone"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

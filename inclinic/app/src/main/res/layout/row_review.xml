@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/margin24dp"
+        android:layout_margin="@dimen/margin8dp"
+        app:cardCornerRadius="@dimen/margin12dp"
+        app:cardBackgroundColor="#FFF"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/rowreview_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alber Mechail"
+        android:textSize="@dimen/margin16dp"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:layout_marginStart="@dimen/margin12dp"
+        android:fontFamily="@font/segousemibold"
+        android:textColor="@color/blackTextColor"/>
+
+    <TextView
+        android:id="@+id/rowreview_commentmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rowreview_username"
+        android:layout_marginStart="@dimen/margin16dp"
+        android:layout_marginTop="@dimen/margin4dp"
+        android:layout_marginEnd="@dimen/margin16dp"
+        android:layout_marginBottom="@dimen/margin8dp"
+        android:text="Doctor is very clever and professional octor is very clever and professional"
+        android:textSize="@dimen/margin12dp"/>
+
+    <RatingBar
+        android:id="@+id/rowreview_ratingbar"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:rating="5"
+        android:layout_centerHorizontal="true"
+        android:clickable="false"
+        android:progressTint="#FFCA2B"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="@dimen/margin12dp"
+        />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

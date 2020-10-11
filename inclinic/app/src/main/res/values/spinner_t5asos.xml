@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="t5asos">
+        <item>General</item>
+        <item>Dentist</item>
+        <item>Orthopaedic</item>
+        <item>Pulmonogist</item>
+        <item>Cardiologist</item>
+        <item>Opthalmologist</item>
+        <item>Neurologist</item>
+        <item>Obstetrician and Gynecologist</item>
+        <item>Nephrologists</item>
+        <item>Dermotologist</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.Book.BookActivity">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:background="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_marginTop="@dimen/margin12dp"
+        android:layout_marginStart="@dimen/margin12dp"
+        android:id="@+id/bookactivity_backimgbtn"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fragments_title_size"
+        android:text="Choose Appointment"
+        android:textColor="#FFF"
+        android:fontFamily="@font/segousemibold"
+        android:layout_marginTop="@dimen/margin8dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/relative_corners"
+        android:layout_marginTop="@dimen/rowimgsize">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+        <TextView
+            android:id="@+id/bookactivity_doctorname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin64dp"
+            android:layout_marginStart="@dimen/margin12dp"
+            android:text="DR. Magdy Yaakoub Appointments"
+            android:fontFamily="@font/segoebold"
+            android:textColor="@color/blackTextColor"
+            android:drawableStart="@drawable/ic_baseline_date_range_24"
+            android:drawablePadding="@dimen/margin8dp"/>
+
+        <View
+            android:layout_width="@dimen/relativefragment_height"
+            android:layout_height="@dimen/margin4dp"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:layout_marginStart="@dimen/margin12dp"
+            android:background="#5F5F5F"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:layout_marginStart="@dimen/margin16dp"
+            android:layout_marginEnd="@dimen/margin16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segousemibold"
+                android:text="Day"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="@dimen/margin16dp"
+                android:gravity="center"
+                android:fontFamily="@font/segousemibold"
+                android:text="From"
+                android:textColor="#000000"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:textSize="@dimen/margin16dp"
+                android:fontFamily="@font/segousemibold"
+                android:text="To"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:layout_marginStart="@dimen/margin16dp"
+            android:layout_marginEnd="@dimen/margin16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/bookactivity_day"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:fontFamily="@font/segoe"
+                android:textColor="#000"/>
+            <TextView
+                android:id="@+id/bookactivity_from"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:fontFamily="@font/segoe"
+                android:textColor="#5F5F5F"/>
+            <TextView
+                android:id="@+id/bookactivity_to"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:fontFamily="@font/segoe"
+                android:textColor="#5F5F5F"/>
+
+        </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/bookactivity_doctorimg"
+        android:layout_width="@dimen/rowimgsize"
+        android:layout_height="@dimen/rowimgsize"
+        android:layout_marginTop="@dimen/margin52dp"
+        app:civ_border_color="@color/whiteTextColor"
+        android:layout_centerHorizontal="true"
+        android:elevation="@dimen/margin12dp"
+        app:civ_border_width="@dimen/margin4dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edittxt_width"
+        android:background="@drawable/relative_corners"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:id="@+id/bookrelative"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/relativefragment_height"
+            android:background="@drawable/relative_corners"
+            android:elevation="@dimen/margin12dp"
+            android:layout_alignParentBottom="true">
+            <TextView
+                android:id="@+id/bookactivity_booktxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:text="Next Page"
+                android:textSize="@dimen/fragments_title_size"
+                android:fontFamily="@font/segoe"
+                android:textColor="#000000"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bookrelative"
+            android:gravity="center"
+            >
+        <Spinner
+            android:layout_width="@dimen/edittxt_width"
+            android:layout_height="@dimen/margin48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:background="@drawable/spinner_background"
+            android:elevation="@dimen/margin4dp"
+            android:id="@+id/bookactivity_selectdayspinner"/>
+
+        <Spinner
+            android:layout_width="@dimen/onboardingimg_size"
+            android:layout_height="@dimen/margin48dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:background="@drawable/spinner_background"
+            android:elevation="@dimen/margin4dp"
+            android:layout_below="@id/bookactivity_selectdayspinner"
+            android:id="@+id/bookactivity_selecttimespinner"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

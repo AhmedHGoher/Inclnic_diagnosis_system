@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF"
+    tools:context=".ui.Appointment.AppointmentFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin52dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin8dp"
+        android:elevation="@dimen/margin24dp">
+    <TextView
+        android:id="@+id/text_dashboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/segousemibold"
+        android:textColor="#000"
+        android:elevation="@dimen/margin12dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/margin24dp"
+        android:text="My Appointments"/>
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin8dp"
+        android:id="@+id/userappointments_swiperefresh">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/userappointments_recyclerview"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</LinearLayout>

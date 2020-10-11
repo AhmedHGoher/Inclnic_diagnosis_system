@@ -1,0 +1,149 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+
+
+    <style name="spinnerItemStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/login_form_details</item>
+        <item name="android:popupBackground">@drawable/et_bg</item>
+    </style>
+
+    <style name="RadiobuttnStyle" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorAccent">@android:color/holo_red_light</item>
+
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar1">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+
+    <!--styles for internet dialog-->
+    <style name="MyTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+<!--        <item name="windowActionBar">false</item>-->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="viewParent">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="df_dialog_layout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="df_dialog">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowBackground">@color/df_transparent_black_background</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="homeHeading" parent="viewParent">
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlActivated">#ffffff</item>
+    </style>
+
+    <style name="learnhubTitleText" parent="parent">
+        <item name="android:textSize">@dimen/contentTextSize</item>
+        <item name="android:textColor">@color/blackTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="spinner_style">
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:dropDownWidth">533dp</item>
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerHeight">0dp</item>
+        <item name="android:popupBackground">#AAAAAA</item>
+        <item name="android:dropDownHeight">70dp</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:dropDownSelector">@android:color/white</item>
+    </style>
+
+    <style name="customtheme" parent="@android:style/Theme.Light">
+        <item name="android:spinnerItemStyle">@style/SpinnerItem</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItem</item>
+    </style>
+
+    <style name="SpinnerItem">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:background">@drawable/my_rectangle</item>
+    </style>
+
+    <style name="SpinnerDropDownItem">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:background">@drawable/my_rectangle</item>
+    </style>
+
+    <style name="MineCustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/margin16dp</item>
+    </style>
+
+    <style name="DownloadTheme" parent="@android:style/Theme.Panel">
+        <item name="android:windowAnimationStyle">@style/DownloadTheme.Window</item>
+    </style>
+
+    <style name="DownloadTheme.Window" parent="@android:style/Animation.Activity">
+        <item name="android:windowEnterAnimation">@anim/fadein</item>
+        <item name="android:windowExitAnimation">@anim/fadeout</item>
+    </style>
+
+    <!--styles for internet dialog ends here-->
+
+
+</resources>

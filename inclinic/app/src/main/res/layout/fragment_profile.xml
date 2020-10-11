@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F1F1"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/setting_linear_user_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="@dimen/margin16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:visibility="gone"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/settings_ui_image_user"
+            android:layout_width="@dimen/profileimg_size"
+            android:layout_height="@dimen/profileimg_size"
+            android:src="@drawable/ic_baseline_verified_user_24"
+            />
+
+        <TextView
+            android:id="@+id/settings_ui_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segousemibold"
+            android:text="User Name"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/margin24dp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/settings_ui_age_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin16dp"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:fontFamily="@font/segoe"
+            android:text="User age"
+            android:gravity="center"
+            android:drawableStart="@drawable/ic_baseline_person_pin_24"
+            android:drawablePadding="@dimen/margin4dp"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:id="@+id/settings_ui_phone_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin16dp"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:fontFamily="@font/segoe"
+            android:text="User phone"
+            android:gravity="center"
+            android:drawableStart="@drawable/fui_ic_phone_white_24dp"
+            android:drawablePadding="@dimen/margin4dp"
+            android:textColor="#ffffff"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin48dp"
+            android:background="@drawable/et_style_white"
+            android:text="Change Information"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:id="@+id/settings_btn_changeInfo_user"
+            android:textColor="#ffffff"
+            >
+        </Button>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin48dp"
+            android:background="@drawable/et_style_white"
+            android:text="Logout"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:id="@+id/logout_profile_user_ui"
+            android:textColor="#ffffff"
+            >
+        </Button>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:id="@+id/setting_linear_signServices_auth"
+        android:visibility="gone"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin52dp"
+            android:background="@drawable/greenboorder"
+            android:backgroundTint="#FFF"
+            android:layout_marginStart="@dimen/margin32dp"
+            android:layout_marginEnd="@dimen/margin32dp"
+            android:text="Sign in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/margin16dp"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:elevation="@dimen/margin24dp"
+            android:id="@+id/settings_signin"
+            android:shadowRadius="6"
+            android:shadowDy="12"
+            android:shadowDx="12"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/margin64dp"
+            android:layout_marginEnd="@dimen/margin64dp"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:gravity="center"
+            android:weightSum="1">
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.45"
+                android:layout_height="@dimen/margin2dp"
+                android:background="#FFFFFF"
+                />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.45"
+                android:layout_height="@dimen/margin2dp"
+                android:background="#FFFFFF"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin52dp"
+            android:background="@drawable/greenboorder"
+            android:layout_marginStart="@dimen/margin32dp"
+            android:layout_marginEnd="@dimen/margin32dp"
+            android:text="Sign up as ( Patient )"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="@dimen/margin16dp"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:layout_marginBottom="@dimen/margin16dp"
+            android:id="@+id/settings_signup"
+          />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin52dp"
+            android:background="@drawable/greenboorder"
+            android:layout_marginStart="@dimen/margin32dp"
+            android:layout_marginEnd="@dimen/margin32dp"
+            android:text="Sign up as ( Doctor )"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="@dimen/margin16dp"
+            android:layout_marginBottom="@dimen/margin16dp"
+            android:id="@+id/settings_signup_as_doctor"
+            />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/setting_linear_doctor_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        android:padding="@dimen/margin16dp"
+        android:visibility="gone"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/settings_ui_image_doctor"
+                android:layout_width="@dimen/profileimg_size"
+                android:layout_height="@dimen/profileimg_size"
+                android:src="@drawable/ic_baseline_person_pin_24"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/settings_ui_doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/segousemibold"
+                    android:layout_marginStart="@dimen/margin16dp"
+                    android:text="Doctor Name"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/margin24dp"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/settings_ui_specialization"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/margin12dp"
+                    android:layout_marginStart="@dimen/margin16dp"
+                    android:layout_marginTop="@dimen/margin4dp"
+                    android:layout_below="@id/rowdoctor_name"
+                    android:layout_toEndOf="@id/imagerate_linear"
+                    android:fontFamily="@font/segoe"
+                    android:text="||||||||||||||||||||||"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_baseline_business_center_24"
+                    android:drawablePadding="@dimen/margin4dp"
+                    android:textColor="#ffffff"
+                    />
+
+                <TextView
+                    android:id="@+id/settings_ui_location_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/margin12dp"
+                    android:fontFamily="@font/segoe"
+                    android:layout_marginStart="@dimen/margin16dp"
+                    android:text="Location Doctor"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_baseline_location_on_24"
+                    android:drawablePadding="@dimen/margin4dp"
+                    android:textColor="#ffffff"
+                    />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin40dp"
+            android:background="@drawable/et_style_white"
+            android:text="Change Information"
+            android:layout_marginTop="@dimen/margin8dp"
+            android:id="@+id/settings_btn_changeInfo_doctor"
+            android:textColor="#ffffff"
+            >
+        </Button>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="margin1dp">1dp</dimen>
+    <dimen name="margin4dp">4dp</dimen>
+    <dimen name="margin8dp">8dp</dimen>
+    <dimen name="margin12dp">12dp</dimen>
+    <dimen name="margin16dp">16dp</dimen>
+    <dimen name="margin24dp">24dp</dimen>
+    <dimen name="margin32dp">32dp</dimen>
+    <dimen name="margin40dp">40dp</dimen>
+    <dimen name="margin48dp">48dp</dimen>
+    <dimen name="margin52dp">52dp</dimen>
+    <dimen name="margin64dp">64dp</dimen>
+    <dimen name="datetxt_size">16sp</dimen>
+    <dimen name="relative_height">115dp</dimen>
+    <dimen name="relativefragment_height">90dp</dimen>
+    <dimen name="spimg_size">211dp</dimen>
+    <dimen name="sptxt_height">52dp</dimen>
+    <dimen name="onboardingimg_size">240dp</dimen>
+    <dimen name="fragments_title_size">22sp</dimen>
+    <dimen name="fragments_info_size">14sp</dimen>
+    <dimen name="edittxt_width">260dp</dimen>
+    <dimen name="rel_height">220dp</dimen>
+    <dimen name="edittxt_size">16sp</dimen>
+    <dimen name="fragment_btn_size">156dp</dimen>
+    <dimen name="google_btn">48dp</dimen>
+    <dimen name="fragmentrelative">108dp</dimen>
+    <dimen name="profileimg_size">116dp</dimen>
+    <dimen name="gridviewsize">500dp</dimen>
+    <dimen name="rowimgsize">132dp</dimen>
+    <dimen name="rowfav_height">330dp</dimen>
+    <dimen name="rowdoublehieght">440dp</dimen>
+</resources>

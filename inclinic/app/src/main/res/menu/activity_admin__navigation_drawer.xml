@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!-- if an item being selected .. still selected in the ui .. like hovering it and change its color   -->
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Admin_Dashboard"
+            android:icon="@drawable/ic_menu_dashboard"
+            android:title="@string/Admin_Dashboard" />
+        <item
+            android:id="@+id/nav_Admin_Diagnosis"
+            android:icon="@drawable/ic_menu_diagnosis"
+            android:title="@string/Admin_Diagnosis" />
+        <item
+            android:id="@+id/nav_Admin_MedicalAnalysis"
+            android:icon="@drawable/ic_menu_medi_analysis"
+            android:title="@string/Admin_MedicalAnalysis" />
+        <item
+            android:id="@+id/nav_Admin_CaseAnalysis"
+            android:icon="@drawable/ic_menu_case_analysis"
+            android:title="@string/case_analysis" />
+        <item
+            android:id="@+id/nav_Admin_Check"
+            android:icon="@drawable/ic_baseline_lock_24"
+            android:title="Check Access" />
+    </group>
+
+</menu>
+

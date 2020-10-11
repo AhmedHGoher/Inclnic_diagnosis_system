@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_appointment"
+            android:icon="@drawable/daterange"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_User_Diagnosis"
+            android:icon="@drawable/ic_menu_diagnosis"
+            android:title="@string/Admin_Diagnosis" />
+        <item
+            android:id="@+id/nav_User_MedicalAnalysis"
+            android:icon="@drawable/ic_menu_medi_analysis"
+            android:title="@string/Admin_MedicalAnalysis" />
+        <item
+            android:id="@+id/nav_User_CaseAnalysis"
+            android:icon="@drawable/ic_menu_case_analysis"
+            android:title="@string/case_analysis" />
+        <item
+            android:id="@+id/OCR"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="OCR" />
+        <item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/info_24"
+            android:title="About us" />
+        <item
+            android:id="@+id/nav_contactus"
+            android:icon="@drawable/ic_baseline_email_24"
+            android:title="Contact us" />
+
+
+
+    </group>
+</menu>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".ui.Aboutus.AboutUsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Philsophy:"
+            android:textSize="@dimen/margin16dp"
+            android:textColor="@color/blackTextColor"
+            android:fontFamily="@font/segoebold"
+            android:layout_marginStart="@dimen/margin32dp"
+            android:layout_marginTop="@dimen/margin16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blackTextColor"
+            android:fontFamily="@font/segoe"
+            android:text="Inclinic is committed to providing the highest quality patient care. Our dedication to excellence, compassion and innovation is rooted in our devotion to the art and science of healing, which supports every aspect of our mission and to the care we give to our patients.
+Care at Inclinic centres on diagnosing and treating patients of all ages, while emphasizing preventative medicine and the overall health and wellness of its patients. The clinic features state of the art equipment and trained staff that will optimize the care of each patient. We understand that there are many factors that can affect health, including exercise, diet, environment and heredity.
+Inclinic also performs minor surgical and non-surgical procedures in our comfortable out-patient settings after both risks and benefits have been explained and understood and written consent has been obtained from the patient. Where appropriate, patients will be referred to specialists and/or hospitals for tests, further treatment and therapy."
+            android:layout_marginStart="@dimen/margin24dp"
+            android:layout_marginEnd="@dimen/margin8dp"
+            android:textSize="@dimen/margin12dp"
+            android:layout_marginTop="@dimen/margin8dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:background="@drawable/relative_corners"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Mission:"
+            android:textSize="@dimen/margin16dp"
+            android:textColor="@color/blackTextColor"
+            android:fontFamily="@font/segoebold"
+            android:layout_marginStart="@dimen/margin32dp"
+            android:layout_marginTop="@dimen/margin16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/segoe"
+            android:textColor="@color/whiteTextColor"
+            android:text="The mission of Inclinic is to promote health and wellbeing of all our patients by providing accessible, high-quality medical care for people of all ages. Inclinic is committed to providing services that will exceed the expectations of our patients.
+We believe that optimal health and performance can be attained through the proper balance of care, exercise, nutrition and education. Our goal is to educate our patients as well as treat them. Therefore, our services will also provide group classes and teaching sessions for our patients. Topics include nutrition, diabetes, hypertension and much more.
+Our doctors focus on each individual case. After each procedure and where appropriate, each patient will be offered education in rehabilitation, nutrition and exercise as it relates to each particular case. Our goal is to create the most well rounded experience for each patient in order to optimize their health.
+Inclinic will maintain privacy according to government regulations and rules. All patients will be welcome."
+            android:layout_marginStart="@dimen/margin24dp"
+            android:layout_marginEnd="@dimen/margin8dp"
+            android:textSize="@dimen/margin12dp"
+            android:layout_marginTop="@dimen/margin8dp"/>
+        </LinearLayout>
+</ScrollView>
+
+</LinearLayout>

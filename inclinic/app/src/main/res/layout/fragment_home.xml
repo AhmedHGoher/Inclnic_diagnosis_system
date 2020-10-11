@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:animateLayoutChanges="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@drawable/categorybackground"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/relative_height"
+            android:src="@mipmap/logo_white"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/margin40dp"
+            android:layout_height="@dimen/margin40dp"
+            android:shadowRadius="6"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:shadowDx="12"
+            android:shadowDy="12"
+            android:elevation="@dimen/margin16dp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/segousemibold"
+            android:hint="Search by Doctor Name"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/margin16dp"
+            android:shadowColor="#FFFFFF"
+            android:editable="false"
+            android:transitionName="edittxt_trans"
+            android:textSize="@dimen/margin12dp"
+            android:drawableEnd="@drawable/ic_baseline_search_24"
+            android:paddingEnd="@dimen/margin16dp"
+            android:id="@+id/category_search"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:background="@drawable/btnboorder"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:layout_marginStart="@dimen/margin32dp"
+            android:layout_marginEnd="@dimen/margin32dp"
+            android:layout_marginBottom="@dimen/margin24dp"
+            app:cardCornerRadius="@dimen/margin16dp"
+            app:cardElevation="@dimen/margin24dp"
+            app:cardBackgroundColor="#FFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/margin12dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Select"
+                        android:fontFamily="@font/segoebold"
+                        android:textSize="22sp"
+                        android:textColor="@color/colorPrimary"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" Doctor Type"
+                        android:fontFamily="@font/segousemibold"
+                        android:textSize="21sp"
+                        android:textColor="@color/colorPrimary"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin24dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/general"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginStart="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin12dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/general"
+                                android:id="@+id/generalimg"
+                                android:layout_marginTop="@dimen/margin12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="General"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:id="@+id/generalxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dentist"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:layout_marginStart="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin24dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/dentist"
+                                android:id="@+id/dentistimg"
+                                android:layout_marginTop="@dimen/margin12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dentist"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:id="@+id/dentisttxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin24dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/ortho"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginStart="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin12dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/orthopaedic"
+                                android:id="@+id/orthoimg"
+                                android:layout_marginTop="@dimen/margin12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Orthopaedic"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:id="@+id/orthotxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/pulmonogist"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:layout_marginStart="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin24dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/pulmonologists"
+                                android:id="@+id/pulmonogistimg"
+                                android:layout_marginTop="@dimen/margin12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pulmonogist"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:id="@+id/pulmonogisttxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin24dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardiologist"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginStart="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin12dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/cardiologists"
+                                android:id="@+id/cardiologistimg"
+                                android:layout_marginTop="@dimen/margin12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cardiologist"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="@dimen/margin16dp"
+                                android:id="@+id/cardiologisttxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/opthal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginStart="@dimen/margin12dp"
+                        android:layout_marginEnd="@dimen/margin24dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ophthalmologists"
+                                android:id="@+id/opthalimg"
+                                android:layout_marginTop="12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Opthalmologist"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:id="@+id/opthaltxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/margin24dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/neurologist"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:layout_marginStart="@dimen/margin24dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin12dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/neurologists"
+                                android:id="@+id/neurologistimg"
+                                android:layout_marginTop="12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Neurologist"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:id="@+id/neurologisttxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/obstetrician"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:layout_marginStart="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin24dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/obstetriciansandgynecologists"
+                                android:id="@+id/obstetricianimg"
+                                android:layout_marginTop="12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Obstetrician and Gynecologist"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/margin4dp"
+                                android:layout_marginEnd="@dimen/margin4dp"
+                                android:id="@+id/obstetriciantxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="@dimen/margin24dp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin24dp">
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/nephrologist"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginStart="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin12dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/nephrologists"
+                                android:id="@+id/nephrologistimg"
+                                android:layout_marginTop="@dimen/margin12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nephrologist"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:id="@+id/nephrologisttxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/dermatologist"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="@dimen/margin12dp"
+                        android:layout_marginStart="@dimen/margin12dp"
+                        android:elevation="@dimen/margin24dp"
+                        android:layout_marginEnd="@dimen/margin24dp"
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:background="@drawable/cardviewgradient"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/dermatologists"
+                                android:id="@+id/dermatologistimg"
+                                android:layout_marginTop="@dimen/margin12dp"
+                                android:transitionName="imagetransition"
+                                />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Dermotologist"
+                                android:fontFamily="@font/segousemibold"
+                                android:textSize="@dimen/margin16dp"
+                                android:layout_marginTop="@dimen/margin8dp"
+                                android:layout_marginBottom="16dp"
+                                android:id="@+id/dermatologisttxt"
+                                android:transitionName="texttransition"
+                                android:textColor="#FFF"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

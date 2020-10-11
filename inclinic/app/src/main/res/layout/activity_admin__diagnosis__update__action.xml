@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/activity_admin__diagnosis__update__action_id"
+android:background="@color/colorAccent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".ui.admin_diagnosis.Admin_Diagnosis_Update_Action" >
+
+
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        >
+
+        <TextView
+            android:id="@+id/Update_D_Txt1_idx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Index:"
+            android:textColor="@color/login_form_details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/Update_D_idx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/et_bg"
+            android:hint="IDX:"
+            android:padding="16dp"
+            android:textColorHint="@color/login_form_details"
+            android:layout_below="@id/Update_D_Txt1_idx"
+            />
+
+        <TextView
+            android:id="@+id/Update_D_Txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Question:"
+            android:textColor="@color/login_form_details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/Update_D_idx"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/Update_D_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/et_bg"
+            android:hint="Question"
+            android:padding="16dp"
+            android:textColorHint="@color/login_form_details"
+            android:layout_below="@id/Update_D_Txt2"
+            />
+
+        <TextView
+            android:id="@+id/Update_D_Txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Answer one:"
+            android:textColor="@color/login_form_details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/Update_D_Question"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/Update_D_a1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/et_bg"
+            android:hint="Answer one:"
+            android:padding="16dp"
+            android:textColorHint="@color/login_form_details"
+            android:layout_below="@id/Update_D_Txt3"
+
+            />
+
+        <TextView
+            android:id="@+id/Update_D_Txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Answer two:"
+            android:textColor="@color/login_form_details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/Update_D_a1"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/Update_D_a2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/et_bg"
+            android:hint="Answer two:"
+            android:padding="16dp"
+            android:textColorHint="@color/login_form_details"
+            android:layout_below="@id/Update_D_Txt4"
+
+            />
+
+
+        <TextView
+            android:id="@+id/Update_D_Txt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Answer three:"
+            android:textColor="@color/login_form_details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/Update_D_a2"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/Update_D_a3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/et_bg"
+            android:hint="Answer three:"
+            android:padding="16dp"
+            android:textColorHint="@color/login_form_details"
+            android:layout_below="@id/Update_D_Txt5"
+            />
+
+        <TextView
+            android:id="@+id/Update_D_Txt6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Answer four:"
+            android:textColor="@color/login_form_details"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_below="@id/Update_D_a3"
+            android:layout_marginLeft="10dp"
+            />
+        <EditText
+            android:id="@+id/Update_D_a4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/et_bg"
+            android:hint="Answer four:"
+            android:padding="16dp"
+            android:textColorHint="@color/login_form_details"
+            android:layout_below="@id/Update_D_Txt6"
+            />
+
+        <Button
+            android:id="@+id/btn_Update_D_A"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Update_D_a4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="38dp"
+            android:background="@drawable/btn_bg"
+            android:text="@string/update"
+            android:textAllCaps="false"
+            android:textColor="@color/login_form_details_medium"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+

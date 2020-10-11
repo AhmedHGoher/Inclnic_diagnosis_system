@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:id="@+id/UserDiagnosisFragmentContaner"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/AD_card_GrayLight"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="405dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp"
+                        android:background="@color/colorAccent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="250dp"
+                            android:layout_height="200dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="45dp"
+                            android:src="@drawable/human_body" />
+
+
+                    </LinearLayout>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="400dp"
+                        android:layout_height="120dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="270dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/start_diagnosing"
+                                android:textSize="24sp"/>
+                            <TextView
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/txt_NEW_No_Diagnosis"
+                                android:gravity="center"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/choose_a_specific_body_part"
+                                android:textStyle="bold"
+                                android:textSize="24sp"
+                                android:paddingTop="10dp"
+                                android:textColor="@color/colorAccent"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <Button
+                        android:id="@+id/butoon111"
+                        android:layout_width="360dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorAccent"
+                        android:text="@string/head_and_neck"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/cardview_light_background"
+                        android:layout_centerHorizontal="true"/>
+
+                    <Button
+                        android:id="@+id/butoon112"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/butoon111"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@color/colorAccent"
+                        android:text="@string/hair_loss"
+                        android:textAllCaps="false"
+                        android:textColor="@color/cardview_light_background"
+                        android:visibility="gone"
+                        android:layout_centerHorizontal="true"/>
+                    <Button
+                        android:id="@+id/butoon113"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@color/colorAccent"
+                        android:layout_below="@+id/butoon112"
+                        android:text="@string/headache"
+                        android:layout_marginBottom="20dp"
+                        android:textAllCaps="false"
+                        android:visibility="gone"
+                        android:textColor="@color/cardview_light_background"
+                        android:layout_centerHorizontal="true"/>
+
+
+                    <Button
+                        android:id="@+id/butoon114"
+                        android:layout_width="360dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/butoon113"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorAccent"
+                        android:text="@string/chest_and_back"
+                        android:layout_marginBottom="10dp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/cardview_light_background"
+                        android:layout_centerHorizontal="true"/>
+
+                    <Button
+                        android:id="@+id/butoon115"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_below="@+id/butoon114"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@color/colorAccent"
+                        android:text="@string/chest_pain"
+                        android:textAllCaps="false"
+                        android:textColor="@color/cardview_light_background"
+                        android:visibility="gone"
+                        android:layout_centerHorizontal="true"/>
+                    <Button
+                        android:id="@+id/butoon116"
+                        android:layout_width="250dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="25dp"
+                        android:background="@color/colorAccent"
+                        android:layout_below="@+id/butoon115"
+                        android:text="@string/pain_on_lower_back"
+                        android:layout_marginBottom="20dp"
+                        android:textAllCaps="false"
+                        android:visibility="gone"
+                        android:textColor="@color/cardview_light_background"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+
+
+
+
+
+</FrameLayout>

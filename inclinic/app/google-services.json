@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "390640846544",
+    "firebase_url": "https://foura-7efbd.firebaseio.com",
+    "project_id": "foura-7efbd",
+    "storage_bucket": "foura-7efbd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390640846544:android:92ee6dd369321ce0d280d5",
+        "android_client_info": {
+          "package_name": "inclinic.com"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390640846544-i1kbcko38v9dk66cu8ttm27vqdgarq4v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "inclinic.com",
+            "certificate_hash": "6c900472b4e0736aa4890e2d439587cab0fa0150"
+          }
+        },
+        {
+          "client_id": "390640846544-3l2jkvbktfneqr30be9alv5ia4497f94.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy_kzzbxoBw-sksZAxEOXugANoy1pbTsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390640846544-3l2jkvbktfneqr30be9alv5ia4497f94.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

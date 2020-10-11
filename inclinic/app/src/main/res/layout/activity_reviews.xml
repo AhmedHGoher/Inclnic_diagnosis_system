@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    android:animateLayoutChanges="true"
+    tools:context=".ui.Search.SearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/reviews_backtxt"
+            android:layout_width="0dp"
+            android:layout_weight="0.15"
+            android:gravity="center"
+            android:layout_height="@dimen/margin24dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:background="@drawable/radiusimgbtn"
+            android:text="Back"
+            android:textSize="@dimen/margin16dp"
+            android:textColor="@color/whiteTextColor"
+            android:layout_margin="@dimen/margin12dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.9"
+            android:layout_height="wrap_content"
+            android:text="Doctor Reviews"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/margin16dp"
+            android:textSize="@dimen/fragments_title_size"
+            android:fontFamily="@font/segoe"
+            android:textColor="@color/blackTextColor"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin2dp"
+        android:background="#39000000"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Reviews Found"
+        android:visibility="gone"
+        android:id="@+id/reviews_noresultstxt"
+        android:layout_marginTop="@dimen/margin16dp"
+        android:layout_marginStart="@dimen/margin16dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin12dp"
+        android:id="@+id/reviews_listview">
+
+    </ListView>
+
+</LinearLayout>

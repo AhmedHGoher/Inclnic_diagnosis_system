@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F1F1F1"
+    tools:context=".ui.Contactus.ContactUsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get in Touch"
+        android:textColor="@color/blackTextColor"
+        android:fontFamily="@font/segoebold"
+        android:textSize="@dimen/margin24dp"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/margin8dp"/>
+    
+    <View
+        android:layout_width="@dimen/onboardingimg_size"
+        android:layout_height="@dimen/margin2dp"
+        android:background="#000"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="@dimen/fragment_btn_size"
+        android:layout_height="@dimen/margin2dp"
+        android:background="#000"
+        android:layout_marginTop="@dimen/margin4dp"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/callus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Call Us"
+            android:layout_marginStart="@dimen/margin12dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:fontFamily="@font/segousemibold"
+            android:textSize="@dimen/margin16dp"
+            android:textColor="@color/blackTextColor"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="@dimen/onboardingimg_size"
+            android:layout_height="@dimen/margin52dp"
+            android:text="+2 0120 036 2281"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:layout_marginStart="@dimen/margin24dp"
+            android:paddingEnd="@dimen/margin12dp"
+            android:shadowRadius="3"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:src="@drawable/callimgbtn_24"
+            android:elevation="@dimen/margin16dp"
+            android:background="@drawable/radiusimgbtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin52dp"
+            android:text="+2 000 000 000"
+            android:fontFamily="@font/segousemibold"
+            android:gravity="center"
+            android:paddingLeft="@dimen/margin64dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:layout_marginStart="@dimen/margin24dp"
+            android:paddingEnd="@dimen/margin12dp"
+            android:shadowRadius="3"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:src="@drawable/callimgbtn_24"
+            android:elevation="@dimen/margin16dp"
+            android:textSize="@dimen/margin12dp"
+            android:backgroundTint="@color/whiteTextColor"
+            android:background="@drawable/radiusimgbtn"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mailus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mail Us"
+        android:layout_marginStart="@dimen/margin12dp"
+        android:layout_marginTop="@dimen/margin12dp"
+        android:fontFamily="@font/segousemibold"
+        android:textSize="@dimen/margin16dp"
+        android:textColor="@color/blackTextColor"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="@dimen/onboardingimg_size"
+            android:layout_height="@dimen/margin52dp"
+            android:text="+2 0120 036 2281"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:layout_marginStart="@dimen/margin24dp"
+            android:paddingEnd="@dimen/margin12dp"
+            android:shadowRadius="3"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:src="@drawable/fui_ic_mail_white_24dp"
+            android:elevation="@dimen/margin16dp"
+            android:background="@drawable/radiusimgbtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin52dp"
+            android:text="admin@inclinic.com"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:fontFamily="@font/segousemibold"
+            android:paddingLeft="@dimen/margin64dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:layout_marginStart="@dimen/margin24dp"
+            android:paddingEnd="@dimen/margin12dp"
+            android:shadowRadius="3"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:src="@drawable/callimgbtn_24"
+            android:elevation="@dimen/margin16dp"
+            android:textSize="@dimen/margin12dp"
+            android:backgroundTint="@color/whiteTextColor"
+            android:background="@drawable/radiusimgbtn"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visit Us"
+        android:layout_marginStart="@dimen/margin12dp"
+        android:layout_marginTop="@dimen/margin12dp"
+        android:fontFamily="@font/segousemibold"
+        android:textSize="@dimen/margin16dp"
+        android:textColor="@color/blackTextColor"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin52dp"
+            android:text="+2 0120 036 2281"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:layout_marginStart="@dimen/margin24dp"
+            android:paddingEnd="@dimen/margin12dp"
+            android:shadowRadius="3"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:src="@drawable/ic_baseline_location_imgbtn_24"
+            android:elevation="@dimen/margin16dp"
+            android:background="@drawable/radiusimgbtn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/margin52dp"
+            android:text="Cairo - Egypt "
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:fontFamily="@font/segousemibold"
+            android:paddingLeft="@dimen/margin64dp"
+            android:layout_marginTop="@dimen/margin12dp"
+            android:layout_marginStart="@dimen/margin24dp"
+            android:paddingEnd="@dimen/margin12dp"
+            android:shadowRadius="3"
+            android:shadowDx="6"
+            android:shadowDy="6"
+            android:elevation="@dimen/margin16dp"
+            android:textSize="@dimen/margin12dp"
+            android:backgroundTint="@color/whiteTextColor"
+            android:background="@drawable/radiusimgbtn"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

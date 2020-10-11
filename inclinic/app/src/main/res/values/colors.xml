@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#469D40</color>
+    <color name="colorPrimaryDark">#469D40</color>
+    <color name="colorAccent">#469D40</color>
+
+
+
+    <color name="df_transparent_black_background">#80000000</color>
+    <color name="whiteCardColor">#fff</color>
+    <color name="whiteTextColor">#fff</color>
+    <color name="blackTextColor">#000</color>
+
+    <dimen name="headerTextSize">22sp</dimen>
+    <dimen name="contentTextSize">16dp</dimen>
+
+
+    <color name="dark_blue">#010a43</color>
+    <color name="purple">#6a0dad</color>
+
+    <color name="dark_blue2">#020D51</color>
+
+    <color name="green2">#40e0d0</color>
+    <color name="orange">#FFA500</color>
+    <color name="white">#ffffff</color>
+    <color name="green">#00ff00</color>
+    <color name="red">	#FF0000</color>
+    <color name="grey">	#A9A9A9</color>
+    <color name="blue">	#0000FF</color>
+    <color name="xxx">#1b262c</color>
+
+    <color name="bluish_white">#edf7fa</color>
+    <color name="whitsh_blue">#5f6caf</color>
+
+
+    <color name="login_form_details">#ccffffff</color>
+    <color name="login_form_details_light">#1affffff</color>
+    <color name="login_form_details_medium">#88ffffff</color>
+
+    <!-- ======================================== -->
+
+    <color name="new_background">#fcfcfc</color>
+
+    <color name="new_light_grey">#ededed</color>
+
+    <color name="new_purple">#7c4dff</color>
+
+    <color name="new_material_yellow">#ffb300</color>
+
+    <color name="new_material_green">#00bfa5</color>
+
+    <color name="new_pink_accent">#ff4081</color>
+
+    <color name="new_material_Color">#352080</color>
+    <!-- ======================================== -->
+    <color name="AD_card_PrimaryDark">#292b3d</color>
+
+    <color name="AD_card_GrayLight">#fafafa</color>
+    <color name="AD_card_StartBlue">#09c6df</color>
+    <color name="AD_card_EndBlue">#0bcce6</color>
+
+    <!-- ================== Action Bar ====================== -->
+
+    <color name="AD_Action_Blue">#0671AA</color>
+
+
+</resources>

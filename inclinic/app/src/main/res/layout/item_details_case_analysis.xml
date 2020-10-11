@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <!-- ============ Card View   ================== -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_analysis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:clickable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp" android:gravity="center_horizontal">
+
+
+            <TextView
+                android:id="@+id/details_part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="part"
+                />
+
+            <TextView
+                android:id="@+id/details_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="pain" />
+
+
+            <TextView
+                android:id="@+id/details_symp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="Symptoms" />
+            <TextView
+                android:id="@+id/details_treat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="treatment" />
+
+
+
+            <TextView
+                android:id="@+id/details_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="age" />
+            <TextView
+                android:id="@+id/details_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="gender" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <TextView
+                android:id="@+id/details_history"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="history" />
+            <TextView
+                android:id="@+id/details_times"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="times" />
+        </LinearLayout>
+
+            <TextView
+                android:id="@+id/details_inherted"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="inheritance" />
+            <TextView
+                android:id="@+id/details_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="country" />
+
+            <TextView
+                android:id="@+id/details_expected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/new_material_Color"
+                android:text="expected" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/new_light_grey" />
+            
+            <Button
+                android:id="@+id/details_update_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="@string/update"
+            android:drawableLeft="@drawable/ic_edit"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:textAlignment="textStart"
+                />
+
+            <Button
+
+                android:id="@+id/details_delete_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="@string/delete"
+                android:drawableLeft="@drawable/ic_delete"
+                android:drawablePadding="20dp"
+                android:padding="20dp"
+                android:textAlignment="textStart"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- ==================================================== -->
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/cancelappointment_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel Appointment"
+        android:layout_marginTop="@dimen/margin12dp"
+        android:layout_marginStart="@dimen/margin12dp"
+        android:textColor="@color/blackTextColor"
+        android:fontFamily="@font/segoebold"
+        android:textSize="@dimen/margin16dp"/>
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/margin12dp"
+        android:textColor="@color/blackTextColor"
+        android:fontFamily="@font/segousemibold"
+        android:layout_below="@+id/cancelappointment_txt"
+        android:layout_margin="@dimen/margin16dp"
+        android:text="NOTE:\nIf you pay by cash, you will get a block after 3 times of cancel the appointment.\nIf you pay by credit you will pay a fine 20% of appointment price."
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_linear"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin52dp"
+        android:weightSum="2"
+        android:layout_marginStart="@dimen/margin12dp"
+        android:layout_marginEnd="@dimen/margin12dp"
+        android:layout_below="@id/txt"
+        android:layout_marginTop="@dimen/margin12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dialog_closetxt_appointment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/margin48dp"
+            android:gravity="center"
+            android:text="No, Close"
+            android:fontFamily="@font/segousemibold"
+            android:textSize="@dimen/margin16dp"
+            android:textColor="@color/blackTextColor"/>
+
+        <TextView
+            android:id="@+id/dialog_canceltxt_appointment"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="@dimen/margin48dp"
+            android:background="@color/whiteTextColor"
+            android:gravity="center"
+            android:text="Yes, Cancel"
+            android:fontFamily="@font/segousemibold"
+            android:textSize="@dimen/margin16dp"
+            android:textColor="@color/blackTextColor"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

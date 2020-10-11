@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="#FFFFFF"
+    tools:context=".Admin.AllDoc.Doctor_edit_information">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/raious_logo"
+        android:layout_weight="1.4"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:src="@mipmap/logo_white"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            >
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        >
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.4"
+        android:padding="8dp"
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:id="@+id/imgPersonToUploadUi_editprofile_doctor"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_baseline_person_24"
+                    android:layout_gravity="center"
+                    />
+
+                <Button
+                    android:id="@+id/buttontouploadui_editprofile_doctor"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/edittext_boorder"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:padding="10dp"
+                    android:text="Update Photo"
+                    android:textColor="#ffffff"
+                    android:textSize="20dp">
+
+                </Button>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="3dp"
+                android:gravity="center"
+                android:text="Doctor full Name"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/name_ui_EditText_doctor_editprofile_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:maxLength="56"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginVertical="4dp"
+                android:layout_marginHorizontal="16dp"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Phonenumber"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/phonenum_ui_EditText_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:maxLength="13"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_local_phone_24"
+                />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="AGE : "
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/age_ui_EditText_doctor_editprofile_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginVertical="8dp"
+                android:layout_marginHorizontal="14dp"
+                android:drawableRight="@drawable/ic_baseline_person_outline_24"
+                />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="clinic location details"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/clinic_location_ui_EditText_doctor_editprofile_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="text"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="clinic location link"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/clinic_location_maps_link_ui_EditText_doctor_editprofile_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="text"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Appointment Price"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/price_per_hour_ui_EditText_doctor_editprofile_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="numberDecimal"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:padding="14dp"
+                android:maxLength="6"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="About me"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/about_me_ui_EditText_doctor_editprofile_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Text here..."
+                android:textColor="#0A0A0A"
+                android:layout_gravity="center"
+                android:singleLine="true"
+                android:inputType="textLongMessage"
+                android:padding="14dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:background="@drawable/et_style"
+                android:layout_marginTop="8dp"
+                android:layout_marginHorizontal="14dp"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        >
+        <Button
+            android:id="@+id/ui_submit_Button_ui_doctor_editprofile_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Info"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:background="@drawable/edittext_boorder"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/margin16dp"
+            android:textStyle="bold"
+            android:elevation="8dp"
+            android:layout_marginLeft="@dimen/margin8dp"
+            />
+        <ProgressBar
+            android:id="@+id/main_progress_doctor_editprofile_doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            android:layout_marginLeft="5dp"
+            android:paddingTop="5dp"
+
+            />
+    </LinearLayout>
+
+</LinearLayout>
+
